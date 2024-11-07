@@ -20,9 +20,12 @@ function calcularConsumo() {
     }
 
     // Verificando se os valores são números
-    if (nome !== "" && tipo !== ""  && consumo !==0) {
-        document.getElementById('resultado').textContent = "Consumo do Cliente " + nome + " " + valor.toFixed(1) + "Kwh"; // Exibe o resultado
-    } else {
+    if (nome !== "" && tipo !== ""  && consumo !==0) 
+    {
+        document.getElementById('resultado').textContent = "Valor Consumo Mensal do(a) Cliente " + nome + ": R$ " + valor.toFixed(2);
+    }
+    else
+    {
         document.getElementById('resultado').textContent = '*** Favor Informar Dados do Cliente.';
     }
     
